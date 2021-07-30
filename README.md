@@ -198,8 +198,7 @@ Build project from sources
 1. download & extract scr.zip + download pom.xml
 2. mvn clean compile assembly:single
 
-you need java 1.8+ and maven installed
-or may use compiled version from target folder
+you need java 1.8+ and maven installed or you may use compiled version from target folder
 
 -----
 Final
