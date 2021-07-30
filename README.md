@@ -159,6 +159,8 @@ or<br/>
 run_harverster_node.bat<br/>
 check logs if everything works well
 
+Check folder /cfg-sample which contains working configuration on linux for 3 harvesters showed on pictures below.
+	
 -------------
 Run UI client
 -------------
@@ -181,13 +183,6 @@ autoscript - automatically open chart windows on start<br/>
 you can select multiple, separated by comma, like this:<br/>
 autoscript = logsfarm_plots_total_chart,logsfarm_plots_farmed_chart
 	
---------------------------
-Build project from sources
---------------------------
-mvn clean compile assembly:single	
-	
-or use compiled version from target folder
-
 ------------------------------------
 Example of working chiamon client UI
 ------------------------------------
@@ -197,7 +192,21 @@ Example of working chiamon client UI
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/04.png)<br/>
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/05.png)<br/>
 
+--------------------------
+Build project from sources
+--------------------------
+mvn clean compile assembly:single	
+	
+or use compiled version from target folder
+
+-----
+Final
+-----
+
 This soft is completely free & opensource and I don't make it for money,
 but if you find this piece of software helpful and useful you can give me some donation to:
 
+bitcoin -> bc1qq3k8zflkacmv8n3rnh4fcw76886y7z7j3mez59
+bincoin cash -> qzdr7e925jy3pjngu2lncc0akkg66540pq74zje8v5
+	
 Thank you.
