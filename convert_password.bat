@@ -1,0 +1,1 @@
+java -cp "target\*" com.ddx.chiamon.node.ConvertPassword %*
