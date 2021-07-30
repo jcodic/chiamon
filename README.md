@@ -196,9 +196,10 @@ Example of working chiamon client UI
 Build project from sources
 --------------------------
 1. download & extract scr.zip + download pom.xml
-2. mvn clean compile assembly:single<br/>	
-use need java 1.8+ and maven installed<br/> 
-or use compiled version from target folder
+2. mvn clean compile assembly:single
+
+you need java 1.8+ and maven installed
+or may use compiled version from target folder
 
 -----
 Final
