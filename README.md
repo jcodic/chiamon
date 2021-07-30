@@ -189,11 +189,11 @@ mvn clean compile assembly:single
 	
 or user compiled version from target folder
 
---------------------------
-Example of working chiamon
---------------------------
+------------------------------------
+Example of working chiamon client UI
+------------------------------------
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/01.png)<br/>
-![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/02.png<br/>
-![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/03.png<br/>
-![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/04.png<br/>
-![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/05.png<br/>
+![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/02.png)<br/>
+![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/03.png)<br/>
+![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/04.png)<br/>
+![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/05.png)<br/>
