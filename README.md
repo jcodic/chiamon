@@ -151,13 +151,13 @@ name - visible name<br/>
 path - path to disk where plots are<br/>
 for linux path could be like that:<br/>
 ```
-/path<br/>
-/plots/{id}<br/>
+/path
+/plots/{id}
 ```
 for windows path could be like that:<br/>
 ```	
-c:\\<br/>
-c:\\plots\\<br/>
+c:\\
+c:\\plots\\
 ```	
 size - declared size of disk, example: 10tb<br/>
 
@@ -190,6 +190,12 @@ stats_collect_time - display data in this interval<br/>
 autoscript - automatically open chart windows on start<br/>
 you can select multiple, separated by comma, like this:<br/>
 autoscript = logsfarm_plots_total_chart,logsfarm_plots_farmed_chart
+
+run UI client by executing:<br/>
+./run_client.sh<br/>
+or<br/>
+run_client.bat<br/>
+check logs if everything works well
 	
 ------------------------------------
 Example of working chiamon client UI
@@ -200,6 +206,13 @@ Example of working chiamon client UI
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/04.png)<br/>
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/05.png)<br/>
 
+-------------------------
+Console profit calculator
+-------------------------
+You can also run command-line tool 'run_profit_calculator' to calculate your profit with many details.
+run_profit_calculator <total_net_space_in_tib> <your_space_in_tib> <coin_price_usd> [your_currency_to_usd_rate]
+example (32 EiB total, 300 Tb yours, $200 per coin): run_profit_calculator 32_000_000 300 200
+	
 --------------------------
 Build project from sources
 --------------------------
