@@ -81,18 +81,19 @@ https://127.0.0.1:8443/servlet/clientservice?cmd=db
 type 'admin' as username and your_password
 if everything is correct return should be like this "PostgreSQL 9.6.22, compiled by Visual C++ build 1800, 64-bit"
 Now your server is running and ready to accept connections from harvesters.
-
+If you are inside firewall and you need to access data by UI client from outside, tomcat default port should be open.
+		
 ------------------------
 Run harvester monitoring
 ------------------------
-1. On each harvester node create folder 'chiamon' with following structure:
-chiamon\logs - directory for logging
-chiamon\target - directory for application, put main jar here
-chiamon\node_log.xml - configuration file for logging
-chiamon\harvester_node.ini - monitoring configuration
-Configuring monitoring configuration file harvester_node.ini:
-[init]
-node_id - is used to identify each harvester
+1. On each harvester node create folder 'chiamon' with following structure:<br/>
+chiamon\logs - directory for logging<br/>
+chiamon\target - directory for application, put main jar here<br/>
+chiamon\node_log.xml - configuration file for logging<br/>
+chiamon\harvester_node.ini - monitoring configuration<br/>
+Configuring monitoring configuration file harvester_node.ini:<br/>
+[init]<br/>
+node_id - is used to identify each harvester<br/>
 main_node_url - address of chiamon main server
 main_node_user - user defined in tomcat, admin by default
 main_node_pwd - encrypted password for user defined in tomcat
