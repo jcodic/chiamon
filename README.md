@@ -211,7 +211,8 @@ Console profit calculator
 -------------------------
 You can also run command-line tool 'run_profit_calculator' to calculate your profit with many details.<br/>
 run_profit_calculator <total_net_space_in_tib> <your_space_in_tib> <coin_price_usd> [your_currency_to_usd_rate]<br/>
-example (32 EiB total, 300 Tb yours, $200 per coin): run_profit_calculator 32_000_000 300 200<br/>
+example (32 EiB total, 300 TiB yours, $200 per coin): run_profit_calculator 32_000_000 300 200<br/>
+output:<br/>
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/06.png)<br/>
 	
 --------------------------
