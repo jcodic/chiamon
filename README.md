@@ -7,11 +7,10 @@ Installing postgresql
 1. Download postgresql from postgresql.org
 2. Init db by executing: initdb.exe -D <db_folder>
 3. In <db_folder> edit pg_hba.conf change all METHOD to md5 as follows:
-	```
-
+```
 # IPv4 local connections:
 host    all             all             127.0.0.1/32            md5
-	```
+```
 4. Execute: psql.exe -U postgres and enter your password, enter following commands:
 ALTER USER postgres WITH encrypted password 'your postgres password';
 CREATE DATABASE chiamon;
