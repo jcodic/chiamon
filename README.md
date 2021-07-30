@@ -195,9 +195,9 @@ Example of working chiamon client UI
 --------------------------
 Build project from sources
 --------------------------
-1. download & extract scr.zip + pom.xml
-2. mvn clean compile assembly:single	
-	
+1. download & extract scr.zip + download pom.xml
+2. mvn clean compile assembly:single<br/>	
+use need java 1.8+ and maven installed<br/> 
 or use compiled version from target folder
 
 -----
@@ -206,6 +206,7 @@ Final
 
 This soft is completely free & opensource and I don't make it for money,
 but if you find this piece of software helpful and useful you can give me some donation to:<br/>
+chia -> xch1ewvdfu0eknnsvrlw4unwh3eyyy5r72s9zjxafergnssee5rpmzlqsnr9nl<br/>
 bitcoin -> bc1qq3k8zflkacmv8n3rnh4fcw76886y7z7j3mez59<br/>
 bincoin cash -> qzdr7e925jy3pjngu2lncc0akkg66540pq74zje8v5<br/>
 	
