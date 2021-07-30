@@ -63,8 +63,7 @@ copy your_password_hash and edit file tomcat\conf\tomcat-users.xml by insert ins
 <role rolename="admin"/>
 <user username="admin" password="your_password_hash" roles="admin"/>
 ```
-comment all other users and roles
-
+comment all other users and roles.
 9. Open tomcat\conf\server.xml
 Find and modify line as follows:
 ```  
