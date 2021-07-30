@@ -1,5 +1,24 @@
 # chiamon
 chia farming monitoring &amp; stats
+
+---------------------
+Installing postgresql
+---------------------
+1. Download postgresql from postgresql.org
+2. Init db by executing: initdb.exe -D <db_folder>
+3. In <db_folder> edit pg_hba.conf change all METHOD to md5 as follows:
+	```
+
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            md5
+	```
+4. Execute: psql.exe -U postgres and enter your password, enter following commands:
+ALTER USER postgres WITH encrypted password 'your postgres password';
+CREATE DATABASE chiamon;
+\q
+5. Stop and start postgresql service
+6. Execute: psql.exe -U postgres chiamon < chiamon\sql\db_1.sql
+
 -----------------
 Installing tomcat
 -----------------
@@ -63,21 +82,6 @@ https://127.0.0.1:8443/servlet/clientservice?cmd=db
 type 'admin' as username and your_password
 if everything is correct return should be like this "PostgreSQL 9.6.22, compiled by Visual C++ build 1800, 64-bit"
 Now your server is running and ready to accept connections from harvesters.
-
----------------------
-Installing postgresql
----------------------
-1. Download postgresql from postgresql.org
-2. Init db by executing: initdb.exe -D <db_folder>
-3. In <db_folder> edit pg_hba.conf change all METHOD to md5 as follows:
-# IPv4 local connections:
-host    all             all             127.0.0.1/32            md5
-4. Execute: psql.exe -U postgres and enter your password, enter following commands:
-ALTER USER postgres WITH encrypted password 'your postgres password';
-CREATE DATABASE chiamon;
-\q
-5. Stop and start postgresql service
-6. Execute: psql.exe -U postgres chiamon < chiamon\sql\db_1.sql
 
 ------------------------
 Run harvester monitoring
@@ -177,3 +181,12 @@ stats_collect_time - display data in this interval
 autoscript - automatically open chart windows on start
 you can select multiple, separated by comma, like this:
 autoscript = logsfarm_plots_total_chart,logsfarm_plots_farmed_chart
+	
+--------------------------
+Build project from sources
+--------------------------
+mvn clean compile assembly:single	
+	
+or user compiled version from target folder
+	
+	
