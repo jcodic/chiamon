@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="LOG_PATH">logs</Property>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%p] %m%n</Property>
+    </Properties>
+    <Appenders>
+    <Console name="Console">
+      <PatternLayout pattern="${LOG_PATTERN}"/>
+    </Console>
+    <RollingFile name="File" fileName="${LOG_PATH}/harvester_node.log"
+       filePattern="${LOG_PATH}/harvester_node-%d{yyyy-MM-dd}-%i.log">
+       <LevelRangeFilter minLevel="FATAL" maxLevel="TRACE" onMatch="ACCEPT" onMismatch="DENY"/>
+       <PatternLayout pattern="${LOG_PATTERN}"/>
+       <Policies>
+           <SizeBasedTriggeringPolicy size="20MB" />
+       </Policies>
+       <DefaultRolloverStrategy max="10"/>
+   </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="all">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>
