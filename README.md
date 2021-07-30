@@ -1,5 +1,9 @@
 # chiamon
-Chia farming monitoring &amp; stats
+Scalable monitoring system for chia farming.
+Supports:
+* Multiple distributed harvesters.
+* Collects stats on: disks S.M.A.R.T., disk read access, plots, chia farming.
+* Remote-UI panel with https access to server (all nodes & disks monitoring real-time).
 
 ---------------------
 Installing postgresql
@@ -132,9 +136,9 @@ use for linux:
 smarts_cmd = dev=$(df -P {path} | awk 'END{print $1}') && sudo smartctl -a $dev
 ```
 use for windows:
-							       ```
+```
 smarts_cmd = smartctl -a {path}
-							       ```
+```
 also you can set smarts_cmd for each disk separately<br/>
 smartctl requires admin rights for reading disks S.M.A.R.T.<br/>
 so under linux you have to run sudo ./run_harvester_node.sh<br/>
@@ -146,11 +150,15 @@ id - unique identifier through all nodes you have<br/>
 name - visible name<br/>
 path - path to disk where plots are<br/>
 for linux path could be like that:<br/>
+```
 /path<br/>
 /plots/{id}<br/>
+```
 for windows path could be like that:<br/>
+```	
 c:\\<br/>
 c:\\plots\\<br/>
+```	
 size - declared size of disk, example: 10tb<br/>
 
 run harvester monitoring by executing:<br/>
