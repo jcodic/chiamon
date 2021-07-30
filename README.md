@@ -1,5 +1,5 @@
 # chiamon
-chia farming monitoring &amp; stats
+Chia farming monitoring &amp; stats
 
 ---------------------
 Installing postgresql
@@ -86,7 +86,7 @@ If you are inside firewall and you need to access data by UI client from outside
 ------------------------
 Run harvester monitoring
 ------------------------
-1. On each harvester node create folder 'chiamon' with following structure:<br/>
+On each harvester node create folder 'chiamon' with following structure:<br/>
 chiamon\logs - directory for logging<br/>
 chiamon\target - directory for application, put main jar here<br/>
 chiamon\node_log.xml - configuration file for logging<br/>
@@ -97,14 +97,13 @@ node_id - is used to identify each harvester<br/>
 main_node_url - address of chiamon main server<br/>
 main_node_user - user defined in tomcat, admin by default<br/>
 main_node_pwd - encrypted password for user defined in tomcat<br/>
-(to get encrypted password run chiamon\convert_password.bat your_password and you will receive encrypted password<br/>
+to get encrypted password run chiamon\convert_password.bat your_password and you will receive encrypted password<br/>
 example: your password is 'secret'<br/>
 execute: convert_password.bat secret<br/>
 your receive following string<br/>
 Password [secret] -> [BNrtrFijAiM=]<br/>
 in ini file set:<br/>
 main_node_pwd = BNrtrFijAiM=<br/>
-)<br/>
 main_node_send_stats_interval - how often your harvester will send stats on main node<br/>
 [vars]<br/>
 io_time_max_scan - max time used for disk scanning, if disk scan is not completed in time it will be stopped and result will return error<br/>
@@ -140,9 +139,9 @@ also you can set smarts_cmd for each disk separately<br/>
 smartctl requires admin rights for reading disks S.M.A.R.T.<br/>
 so under linux you have to run sudo ./run_harvester_node.sh<br/>
 undex windows you may run run_harvester_node.bat under admin if you want all info<br/>
-windows do not require admin rights, but can skip some data if not in admin mode<br/>
+windows do not require admin rights, but could skip some data if not in admin mode<br/>
 [disk_N]<br/>
-define each disk use have on this node<br/>
+define each disk on this node<br/>
 id - unique identifier through all nodes you have<br/>
 name - visible name<br/>
 path - path to disk where plots are<br/>
@@ -164,7 +163,7 @@ check logs if everything works well
 Run UI client
 -------------
 From any remote location you can access your harvesters.<br/>
-Create create folder 'chiamon' with following structure:<br/>
+Create folder 'chiamon' with following structure:<br/>
 chiamon\logs - directory for logging<br/>
 chiamon\target - directory for application, put main jar here<br/>
 chiamon\client_log.xml - configuration file for logging<br/>
@@ -187,7 +186,7 @@ Build project from sources
 --------------------------
 mvn clean compile assembly:single	
 	
-or user compiled version from target folder
+or use compiled version from target folder
 
 ------------------------------------
 Example of working chiamon client UI
@@ -197,3 +196,8 @@ Example of working chiamon client UI
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/03.png)<br/>
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/04.png)<br/>
 ![alt text](https://github.com/jcodic/chiamon/blob/main/img-example/05.png)<br/>
+
+This soft is completely free & opensource and I don't make it for money,
+but if you find this piece of software helpful and useful you can give me some donation to:
+
+Thank you.
