@@ -195,7 +195,8 @@ Example of working chiamon client UI
 --------------------------
 Build project from sources
 --------------------------
-mvn clean compile assembly:single	
+1. download & extract scr.zip + pom.xml
+2. mvn clean compile assembly:single	
 	
 or use compiled version from target folder
 
