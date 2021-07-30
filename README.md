@@ -1,7 +1,7 @@
 # chiamon
 chia farming monitoring &amp; stats
 -----------------
-**Installing tomcat
+Installing tomcat
 -----------------
 1. Download tomcat from https://tomcat.apache.org as zip archive and extract all
 2. Goto tomcat\webapps directory and remove all files and folders here
@@ -93,7 +93,7 @@ node_id - is used to identify each harvester
 main_node_url - address of chiamon main server
 main_node_user - user defined in tomcat, admin by default
 main_node_pwd - encrypted password for user defined in tomcat
-(to get encrypted password run chiamon\convert_password.bat your_password and you'll receive encrypted password
+(to get encrypted password run chiamon\convert_password.bat your_password and you will receive encrypted password
 example: your password is 'secret'
 execute: convert_password.bat secret
 your receive following string
@@ -125,9 +125,13 @@ https://www.smartmontools.org/wiki/Download
 it's available for windows and linux
 make smartctl available on path or write full path in cmd
 use for linux:
+```							       
 smarts_cmd = dev=$(df -P {path} | awk 'END{print $1}') && sudo smartctl -a $dev
+```
 use for windows:
+							       ```
 smarts_cmd = smartctl -a {path}
+							       ```
 also you can set smarts_cmd for each disk separately
 smartctl requires admin rights for reading disks S.M.A.R.T.
 so under linux you have to run sudo ./run_harvester_node.sh
