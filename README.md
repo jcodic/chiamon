@@ -204,9 +204,8 @@ Final
 -----
 
 This soft is completely free & opensource and I don't make it for money,
-but if you find this piece of software helpful and useful you can give me some donation to:
-
-bitcoin -> bc1qq3k8zflkacmv8n3rnh4fcw76886y7z7j3mez59
-bincoin cash -> qzdr7e925jy3pjngu2lncc0akkg66540pq74zje8v5
+but if you find this piece of software helpful and useful you can give me some donation to:<br/>
+bitcoin -> bc1qq3k8zflkacmv8n3rnh4fcw76886y7z7j3mez59<br/>
+bincoin cash -> qzdr7e925jy3pjngu2lncc0akkg66540pq74zje8v5<br/>
 	
 Thank you.
