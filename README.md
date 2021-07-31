@@ -219,7 +219,7 @@ output:<br/>
 --------------------------
 Build project from sources
 --------------------------
-1. download & extract scr.zip + download pom.xml
+1. git clone https://github.com/jcodic/chiamon
 2. mvn clean compile assembly:single
 
 you need java 1.8+ and maven installed or you may use compiled version from target folder
